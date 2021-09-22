@@ -1,0 +1,20 @@
+{
+    "products":
+ [
+     {"id":1,"name":"Laptop","unitPrice":4000,"categoryId":1,"description":"Asus ZenBook","imageUrl":"https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MXwxMjA3fDF8MHxzZWFyY2h8MXx8bGFwdG9wfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"},
+     {"id":2,"name":"Mouse","unitPrice":30,"categoryId":2,"description":"A4 Tech","imageUrl":"https://images.unsplash.com/photo-1586816879360-004f5b0c51e5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8bW91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"},
+     {"id":3,"name":"KeyBoard","unitPrice":100,"categoryId":2,"description":"Dark Elit Force","imageUrl":"https://images.unsplash.com/photo-1586820266346-a12b444dc61f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGtleWJvYXJkfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"},
+     {"id":4,"name":"Telephone","unitPrice":900,"categoryId":1,"description":"Iphone 6 Plus","imageUrl":"https://images.unsplash.com/photo-1482941059634-6bf5a670d7bf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGVsZXBob25lJTIwaXBob25lJTIwNnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"},
+     {"id":5,"name":"Tv","unitPrice":5000,"categoryId":1,"description":"Samsung A3 Led","imageUrl":"https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c2Ftc3VuZyUyMHR2fGVufDB8fDB8&auto=format&fit=crop&w=500&q=60"},
+     {"id":6,"name":"Tablet","unitPrice":600,"categoryId":1,"description":"A4 Tech","imageUrl":"https://images.unsplash.com/photo-1590103514924-009a76183beb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8dGFibGV0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}
+ ],
+     "categories":
+ [
+    {"id":1,"name":"Electronic"},
+    {"id":2,"name":"Computer sets"},
+    {"id":3,"name":"Beverages"},
+    {"id":4,"name":"Music"},
+    {"id":5,"name":"Books"},
+    {"id":6,"name":"Spor"},
+ ]	
+}

@@ -1,0 +1,18 @@
+<main class="form-signin my-5">
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="form-signin">
+    <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+    <label for="userName" class="visually-hidden">User Name</label>
+    <input type="text" id="userName" name="userName" #userName="ngModel" [(ngModel)]="model.userName"
+      class="form-control" placeholder="User Name" required autofocus>
+    <label for="floatingPassword" class="visually-hidden">Password</label>
+    <input type="password" id="password" name="password" #password="ngModel" [(ngModel)]="model.password"
+      class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017–2021</p>
+  </form>
+</main>

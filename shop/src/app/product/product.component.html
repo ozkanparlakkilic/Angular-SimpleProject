@@ -1,0 +1,25 @@
+<!-- <h3 *ngIf="products; else noProduct">{{title}}</h3> -->
+<app-category></app-category>
+<div class="form-group">
+  <input class="form-control" id="productName" placeholder="Search" [(ngModel)]="filterText">
+  <small *ngIf="filterText" class="form-text text-muted">Şu an <strong>{{filterText}} </strong>aradınız</small>
+</div>
+
+<ng-template #noProduct>
+  <div class="alert alert-primary" role="alert">
+    Bu kategory de ürün yoktur
+  </div>
+</ng-template>
+
+<div class="row">
+  <div *ngFor="let product of products | productFilter:filterText" class="card m-3 shadow p-3 mb-5 bg-white rounded">
+    <img [src]="product.imageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}} {{product.unitPrice | currency:'USD':true:'1.2-2'}}</h5>
+      <p class="card-text">{{product.description}}</p>
+      <a (click)="addToCart(product)" class="btn btn-primary">Buy Product</a>
+    </div>
+  </div>
+
+</div>
+

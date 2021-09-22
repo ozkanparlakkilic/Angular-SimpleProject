@@ -1,0 +1,42 @@
+<h3>New Add Product</h3>
+
+<form #productAddForm="ngForm" (ngSubmit)="add(productAddForm)">
+  <div class="form-group">
+    <input type="text" placeholder="Product Name" #name="ngModel" [(ngModel)]="model.name" class="form-control"
+      name="name" id="name" required>
+    <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">
+      Product name is required</div>
+  </div>
+  <div class="form-group">
+    <input type="text" placeholder="Description" #description="ngModel" [(ngModel)]="model.description"
+      class="form-control" name="description" id="description" required>
+    <div *ngIf="description.invalid && description.dirty" class="alert alert-danger">
+      Product description is required</div>
+  </div>
+  <div class="form-group">
+    <input type="text" placeholder="Product Image" #imageUrl="ngModel" [(ngModel)]="model.imageUrl" class="form-control"
+      name="imageUrl" id="imageUrl" required>
+    <div *ngIf="imageUrl.invalid && imageUrl.dirty" class="alert alert-danger">
+      Product image url is required</div>
+  </div>
+  <div class="form-group">
+    <input type="text" placeholder="Product Price" #unitPrice="ngModel" [(ngModel)]="model.unitPrice"
+      class="form-control" name="unitPrice" id="unitPrice" required>
+    <div *ngIf="unitPrice.invalid && unitPrice.dirty" class="alert alert-danger">
+      Product price is required</div>
+  </div>
+
+  <div class="form-group">
+    <select #categoryId="ngModel" [(ngModel)]="model.categoryId" required name="categoryId" id="categoryId"
+      class="form-control">
+      <option value="" disabled>Select your option</option>
+      <option *ngFor="let category of categories" [value]="category.id">
+        {{category.name}}
+      </option>
+    </select>
+    <div *ngIf="categoryId.invalid && categoryId.touched" class="alert alert-danger">
+      Category is required</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid">Product Add</button>
+</form>
